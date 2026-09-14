@@ -20,14 +20,6 @@ Before writing or rewriting a GitHub README, read and follow:
 
 Follow both the writing style and the preferred approach to README structure. Do not mechanically apply a conventional README template.
 
-## KAKENHI proposals
-
-Before drafting or revising a KAKENHI proposal, read and follow:
-
-`styles/nobuyuki-kobayashi-kakenhi.md`
-
-Preserve Kobayashi's own scientific writing style and use the proposal-type-specific strategy in the guide. For Challenging Research (Pioneering), make the conceptual challenge and potential change to the academic framework clear to broad middle-category reviewers, rather than merely emphasizing technical difficulty.
-
 ## Source of truth
 
 The style guides are the source of truth for the corresponding document types. Explicit new corrections from Nobuyuki Kobayashi take precedence over existing rules and should be reflected in the guides when appropriate.
