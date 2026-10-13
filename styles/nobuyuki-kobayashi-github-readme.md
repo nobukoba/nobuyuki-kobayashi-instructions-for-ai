@@ -236,3 +236,11 @@ Explicit corrections made by Kobayashi are stronger evidence of the intended sty
 Examples include requests to move `How to use` earlier, make commands directly copy-pasteable, provide the actual download URL, explicitly state versions and architectures, reorganize the README around the user's workflow, and place development and maintenance information under `For Developers`.
 
 If a new explicit correction conflicts with this document, prefer the new correction and update this style guide accordingly.
+
+## Concrete utility Quick Starts and bilingual maintenance
+
+For a small writer/loader utility, the SiTCP writer README is a useful reference for the early flow: quick installation, actual writer commands, inspection/reader commands, then an appendix. Copy the approach, not incompatible build steps or directory names. Python tools should show the real Python file/command; never invent make install or bin output.
+
+Keep English and Japanese README code examples identical and provide Language navigation. Source/help/error text can remain English while manuals are bilingual. Explain host prerequisites before commands that depend on them, but put byte maps, algorithms, implementation history and measured evidence in FOR_DEVELOPERS and constraints in AGENTS.
+
+State what is physically verified, mock-tested, not implemented or merely theoretically possible. Do not advertise macOS/USB/container support because a Python test suite passes on that OS. Display actual selected/downloaded filenames in version-dependent workflows.

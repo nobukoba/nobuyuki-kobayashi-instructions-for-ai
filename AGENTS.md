@@ -23,3 +23,9 @@ Follow both the writing style and the preferred approach to README structure. Do
 ## Source of truth
 
 The style guides are the source of truth for the corresponding document types. Explicit new corrections from Nobuyuki Kobayashi take precedence over existing rules and should be reflected in the guides when appropriate.
+
+## Command-line tools and project knowledge
+
+Before designing or documenting a comparable CLI tool, read `styles/nobuyuki-kobayashi-cli-tools.md`. It records explicit naming, English output, automation, history-limit and hardware-verification corrections.
+
+For AMANEQ firmware work, also read `projects/amaneq-firmware-programer.md` and the project's own AGENTS/developer notes. Keep its JEDEC/USB/firmware observations scoped to that project. Update durable knowledge when the user explicitly authorizes it; never convert mock/source-level evidence into claims of physical verification.

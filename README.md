@@ -8,6 +8,11 @@ This repository is intended to be a source of truth for AI agents such as ChatGP
 
 - [Japanese email style](styles/nobuyuki-kobayashi-japanese-email.md)
 - [GitHub README style](styles/nobuyuki-kobayashi-github-readme.md)
+- [CLI tool preferences](styles/nobuyuki-kobayashi-cli-tools.md)
+
+## Project knowledge
+
+- [AMANEQ firmware programer](projects/amaneq-firmware-programer.md): user decisions, source/manual constraints, physical observations and validation limits.
 
 ## For AI agents
 
