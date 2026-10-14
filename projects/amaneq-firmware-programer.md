@@ -48,7 +48,7 @@ JTAG reset did not establish persistent boot (DONE stayed 0). Matching BIT was r
 
 Final Python programming orchestration and full backup sequence are mock-tested, not end-to-end verified on hardware. Linux/WSL/container paths, Xilinx cable programming and mezzanine variants also remain physically unverified.
 
-macOS cable enumeration/programming is not implemented; download/inspection are usable. Windows driver setup, Linux USB permissions, WSL forwarding and container access remain host requirements even with bundled binaries. Apptainer usually exposes /dev and /sys but retains the host user's permissions. macOS Docker Desktop does not make a USB device available by a normal Linux bind mount alone.
+Target environments: Windows WSL2, native Linux and native macOS. macOS USB enumeration uses ioreg plist output and FTDI serial selection, with offline mock tests. Linux/WSL uses sysfs and bus/device selection. Windows native helpers remain legacy support outside this target scope. Programming on these three environments remains physically unverified. Windows driver setup, Linux USB permissions, WSL forwarding and container access remain host requirements even with bundled binaries. Apptainer usually exposes /dev and /sys but retains the host user's permissions. macOS Docker Desktop does not make a USB device available by a normal Linux bind mount alone.
 
 The selected binary's list-cables determines capabilities. The tested Windows build lacked Xilinx Platform Cable support. The upstream Xilinx constructor does not accept bus/serial selection, so keep only one Xilinx cable connected for that path.
 
