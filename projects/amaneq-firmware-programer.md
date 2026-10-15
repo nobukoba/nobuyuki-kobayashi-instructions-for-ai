@@ -87,3 +87,5 @@ The user expects past firmware in the GUI. Listing only default-branch files doe
 Provide explicit MCS/BIT selection, filtered before history limits with cache separation by format. The earlier explicit Skeleton-only BIT policy still applies. HR-TDC mezzanine fixes hrtdc firmware and hides its redundant selector; other targets restore it. Keep MPC/MPCX file label/path/chooser on one line and allow horizontal scrolling of long paths/URLs. Do not break normal editing/caret behavior while adding scroll bindings. Local format/content preflight belongs off the Tk thread.
 
 Desktop 0.8 wording: New device IP is a single row. Use exact checkbox labels Change current (runtime) IP instead of saved EEPROM IP and Enable temporary static host IP address. Keep existing write/temporary-alias semantics.
+
+Desktop 0.9: input/output frequency label and preset share one row. Rename Apply clock setting to Apply. Program image, Write MPC/MPCX, Write IP and Apply use normal button size and bold weight; supersede the earlier large/full-width Program image requirement. Use a shared style based on the native default button font.
