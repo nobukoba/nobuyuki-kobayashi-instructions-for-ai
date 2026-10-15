@@ -55,3 +55,5 @@ The selected binary's list-cables determines capabilities. The tested Windows bu
 MCS flow: full flash backup, program, independent image-range dump, byte equality, result metadata. No automatic destructive retries or license EEPROM writing. SiTCP and SiTCP-XG are separate licenses; firmware writes do not replace those licenses.
 
 Tracked tests use synthetic data and mocks. Keep firmware files, actual flash backups, proprietary MPC/MPCX licenses, packet captures, driver packages, credentials and local runtimes out of Git.
+
+Windows means WSL2 for this project. Provide copy/paste PowerShell setup via setup-windows-wsl.ps1; explicit Setup installs host usbipd-win and Linux packages. USB Attach/Detach must require an explicit BUSID and never automatically select a cable or write firmware. Keep normal Python execution free of host setup side effects.
