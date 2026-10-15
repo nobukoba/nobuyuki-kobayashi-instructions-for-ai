@@ -81,3 +81,7 @@ Latest tab order is Firmware, MPC / MPCX, IP, Jitter Cleaner. Separate IP-only r
 ## Desktop firmware history correction
 
 The user expects past firmware in the GUI. Listing only default-branch files does not recover replaced versions. Traverse tags and mcs/bit commit history, deduplicate path/blob identities, retain different blobs under identical names and pin exact commit/path. Expose History limit (10 total by default, editable 1..1000), show source revision and keep current newest selected. Bound traversal and distinguish incomplete/rate-limited lookups from complete history. A live official StrLrTdc v4 lookup recovered v2.9/v2.8.1/v2.8 and older alongside current v2.A.
+
+## Desktop 0.7 format/path correction
+
+Provide explicit MCS/BIT selection, filtered before history limits with cache separation by format. The earlier explicit Skeleton-only BIT policy still applies. HR-TDC mezzanine fixes hrtdc firmware and hides its redundant selector; other targets restore it. Keep MPC/MPCX file label/path/chooser on one line and allow horizontal scrolling of long paths/URLs. Do not break normal editing/caret behavior while adding scroll bindings. Local format/content preflight belongs off the Tk thread.
