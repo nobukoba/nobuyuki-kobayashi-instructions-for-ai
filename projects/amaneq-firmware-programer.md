@@ -77,3 +77,7 @@ Clock tab: no device mode; Target IP .10/.16/Custom. License tab: select file fi
 ## Desktop 0.5 corrections
 
 Latest tab order is Firmware, MPC / MPCX, IP, Jitter Cleaner. Separate IP-only reading/writing; use the fourth bundled native helper sitcp-sitcpxg-ip-reader. Target IP is one row without mask, with asynchronous bounded Ping and inline result. Network tabs share opt-in temporary host controls. Critical: Python labels were reversed. Upstream type 2 (tag offset 6, delta 0x34) is normal MPC; type 1 (offset 0, delta 0x2C) is MPCX. Preserve classifier precedence and validate labels using independent official synthetic fixtures, not the same implementation. MPC targets .16, MPCX .10. Do not change the already validated C++ programming protocol to fix UI labels.
+
+## Desktop firmware history correction
+
+The user expects past firmware in the GUI. Listing only default-branch files does not recover replaced versions. Traverse tags and mcs/bit commit history, deduplicate path/blob identities, retain different blobs under identical names and pin exact commit/path. Expose History limit (10 total by default, editable 1..1000), show source revision and keep current newest selected. Bound traversal and distinguish incomplete/rate-limited lookups from complete history. A live official StrLrTdc v4 lookup recovered v2.9/v2.8.1/v2.8 and older alongside current v2.A.
