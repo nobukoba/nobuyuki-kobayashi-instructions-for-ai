@@ -95,3 +95,5 @@ Desktop 0.10: history explicitly means earlier log messages, not navigation stat
 Desktop 0.11: avoid implementation jargon like HUL register map in product controls. Use Select input / output frequencies of CDCE62002 chip (MHz):. HUL means Hadron Universal Logic; keep its reference in developer notes. Retain conditional unsupported-board guards. Tab-order request repeated Jitter Cleaner; interpret final duplicate as IP unless corrected, explicitly stating the assumption: Firmware / Jitter Cleaner / MPC/MPCX / IP.
 
 Desktop 0.12: exact Target IP labels are 192.168.10.16 (SiTCP default) and 192.168.10.10 (SiTCP-XG default). Keep presentation labels separate from bare network addresses, including ping result matching and file-kind auto-selection.
+
+Desktop 0.13 exact GUI family labels: LR-TDC, HR-TDC, LR-TDC 10GbE, MIKUMARI Hub, Skelton. Preserve requested Skelton spelling as display text; retain internal skeleton and other CLI/repository identifiers. Separate presentation mapping from operational values and test all five label-to-ID transitions.
