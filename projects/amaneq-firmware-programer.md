@@ -89,3 +89,5 @@ Provide explicit MCS/BIT selection, filtered before history limits with cache se
 Desktop 0.8 wording: New device IP is a single row. Use exact checkbox labels Change current (runtime) IP instead of saved EEPROM IP and Enable temporary static host IP address. Keep existing write/temporary-alias semantics.
 
 Desktop 0.9: input/output frequency label and preset share one row. Rename Apply clock setting to Apply. Program image, Write MPC/MPCX, Write IP and Apply use normal button size and bold weight; supersede the earlier large/full-width Program image requirement. Use a shared style based on the native default button font.
+
+Desktop 0.10: history explicitly means earlier log messages, not navigation state. Keep current-session text, pause autoscroll on manual history browsing and resume with Latest/Follow latest. Add draggable log height and Expand/Restore; normal window resizing plus 75–150% UI/font scaling. User reported Mac tabs only repaint after mouse movement: schedule layout/redraw on tab change and canvas Map without requiring pointer movement. Startup/synthetic checks do not prove visual behavior on the user’s actual Mac.
