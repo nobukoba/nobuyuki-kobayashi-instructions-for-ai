@@ -16,7 +16,7 @@ When more than one hardware cable/device could be selected and no unique identif
 
 Explicitly requested interactive selection of software versions/files is a separate feature and may remain. A flag that skips final confirmation must not silently resolve ambiguous hardware.
 
-Bound long historical lists by default. In the AMANEQ tool the requested total is 10, adjustable using --history-limit. State whether a limit is total or per category; do not advertise ten while displaying ten tags plus ten commits. Combine duplicate identities and show the latest choices first.
+Bound long historical lists by default. In the AMANEQ tool the requested total is 5, adjustable using --history-limit. State whether a limit is total or per category; do not advertise ten while displaying ten tags plus ten commits. Combine duplicate identities and show the latest choices first.
 
 ## Output and error handling
 
@@ -39,3 +39,5 @@ After persistent writes, require readback appropriate to the operation. Keep bac
 Follow the README style guide. For small utilities, emulate the SiTCP writer's early practical sequence: purpose, clone/install, actual write commands, inspection/read commands, then an appendix. Use the real execution path; do not introduce make/install/bin steps into a Python repository that lacks them.
 
 Maintain synchronized English/Japanese commands and language navigation. Put technical algorithms, device maps, evidence and implementation history into FOR_DEVELOPERS; keep README focused on actions users need, including setup constraints that affect those actions.
+
+Desktop 0.15.4 correction: use 5 total firmware history choices by default in the AMANEQ GUI and CLI, adjustable with History limit / --history-limit (1..1000). Preserve metadata caching and rate-limit backoff; reducing rows does not guarantee proportional request savings.
