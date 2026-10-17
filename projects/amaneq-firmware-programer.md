@@ -127,3 +127,5 @@ Desktop 0.15.2 fixes the user screenshot with Messages filling the window and ma
 Desktop 0.15.3: remove the entire GitHub token row from Firmware (input, Apply and Open GitHub). Preserve editable repository URL, Refresh list, metadata cache and 403/429 backoff; error messages should suggest waiting or a browser/manual download with Local file, not removed UI controls.
 
 Desktop 0.15.4 correction: use 5 total firmware history choices by default in the AMANEQ GUI and CLI, adjustable with History limit / --history-limit (1..1000). Preserve metadata caching and rate-limit backoff; reducing rows does not guarantee proportional request savings.
+
+Desktop 0.15.5: user-requested app cooldown begins on the fourth GitHub category change (Board/Target/Firmware/Format; initial selection excluded). Show a warning and remaining seconds for 60 seconds; block additional catalog requests, retain the latest selection, do not extend on further changes, and refresh it on expiry. Reset the counter after expiry. Same-category refresh and Local file do not count. Keep GitHub server backoff independent; stale in-flight results must not overwrite the new selection.
