@@ -244,3 +244,9 @@ For a small writer/loader utility, the SiTCP writer README is a useful reference
 Keep English and Japanese README code examples identical and provide Language navigation. Source/help/error text can remain English while manuals are bilingual. Explain host prerequisites before commands that depend on them, but put byte maps, algorithms, implementation history and measured evidence in FOR_DEVELOPERS and constraints in AGENTS.
 
 State what is physically verified, mock-tested, not implemented or merely theoretically possible. Do not advertise macOS/USB/container support because a Python test suite passes on that OS. Display actual selected/downloaded filenames in version-dependent workflows.
+
+## Desktop downloads and language-link checks
+
+For a desktop application, put download links near the start, separated by OS and CPU architecture. Link directly to verified assets when known, and explain extraction and the executable to open. Distinguish app packages from GitHub's Source code archives. State explicitly when an OS has no published download, a build failed, or an artifact expired; local build success does not establish public availability. If distribution uses Actions, give the workflow URL, successful-run selection, Artifacts location, sign-in requirement and retention period. Verify actual availability before publishing instructions.
+
+Save bilingual documents as UTF-8. Check that Japanese language navigation displays correctly and that Markdown brackets and link targets remain intact. Keep download availability and instructions synchronized between English and Japanese READMEs.
