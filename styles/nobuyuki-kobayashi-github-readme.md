@@ -252,3 +252,8 @@ For a desktop application, put download links near the start, separated by OS an
 Save bilingual documents as UTF-8. Check that Japanese language navigation displays correctly and that Markdown brackets and link targets remain intact. Keep download availability and instructions synchronized between English and Japanese READMEs.
 
 Check build jobs and artifacts per OS: an overall failed workflow can still contain a successful downloadable Linux artifact. Do not use only "pending"; state build status, failed step, artifact availability, Release publication status and what users can do now.
+
+
+## Public desktop downloads and stable URLs
+
+When public downloads are requested, publish app archives as public Release assets rather than requiring ordinary users to sign in for Actions artifacts. Use fixed per-platform latest-successful URLs in README, update the assets automatically only after build/startup/checksum validation, and retain the previous success on failure. Preserve versioned archives and source/hash provenance. Do not require manual README link edits for every build, use expiring redirect URLs, or conflate preview distribution with macOS notarization.
